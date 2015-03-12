@@ -66,9 +66,24 @@
 
 #navigation {
   position: absolute;
-  top: 2em;
+  top: 50%;
   right: 2em;
   z-index: 99;
+  width:95%;
+}
+#navigation .ui-btn{ 
+	width:50px; 
+	height:50px;
+	background:none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+#navigation span.ui-btn-inner{
+	display: block;   
+    min-width: auto !important;   
+    position: relative !important;
+   	border:0 !important;
+   	padding:0px !important;
 }
 
 #navigation button.disabled {
@@ -94,6 +109,22 @@
 
 #navigation button i:hover { color: white; }
 
-#navigation button.button-left{background:url(../img/prevImgBtn.png) no-repeat !important;}
-#navigation button.button-right{background:url(../img/nextImgBtn.png) no-repeat !important;}
+#navigation button.button-left{ }
+#navigation button.button-right{ }
 
+#navigation div.prevbutton{position:relative; float:left;background:url(../img/prevImgBtn.png) no-repeat !important;}
+#navigation div.nextbutton{position:relative; float:right;background:url(../img/nextImgBtn.png) no-repeat !important;}
+
+img.fullscreen {
+  max-width:100%;
+  max-height:100%;
+}
+       
+img.thumbnail{
+  max-width:30%;
+  max-height:30%;
+}
+.sub{
+  font-weight:normal;
+  font-style:italic;
+}
