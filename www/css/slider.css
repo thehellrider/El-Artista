@@ -128,3 +128,8 @@ img.thumbnail{
   font-weight:normal;
   font-style:italic;
 }
+
+.video_thumbs{
+position:relative;
+top:50%;	
+}
