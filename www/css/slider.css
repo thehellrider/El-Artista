@@ -67,9 +67,9 @@
 #navigation {
   position: absolute;
   top: 50%;
-  right: 2em;
+  right: 0;
   z-index: 99;
-  width:95%;
+  width:100%;
 }
 #navigation .ui-btn{ 
 	width:50px; 
@@ -112,8 +112,8 @@
 #navigation button.button-left{ }
 #navigation button.button-right{ }
 
-#navigation div.prevbutton{position:relative; float:left;background:url(../img/prevImgBtn.png) no-repeat !important;}
-#navigation div.nextbutton{position:relative; float:right;background:url(../img/nextImgBtn.png) no-repeat !important;}
+#navigation div.prevbutton{position:relative; float:left;background:url(../img/prevImgBtn.png) no-repeat !important; margin-left:20px;}
+#navigation div.nextbutton{position:relative; float:right;background:url(../img/nextImgBtn.png) no-repeat !important;margin-right:20px;}
 
 img.fullscreen {
   max-width:100%;

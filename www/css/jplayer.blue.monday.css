@@ -107,7 +107,8 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  top: -8px;
+  top: 0px;
+  margin:8px 0;
   /* This negative value depends on the size of the text in jp-currentTime and jp-duration */ }
 
 .jp-interface .jp-controls {
@@ -131,7 +132,7 @@
 
 .jp-video .jp-type-playlist .jp-controls {
   width: 134px;
-  margin-left: 172px; }
+  /*margin-left: 172px;*/ }
 
 .jp-video .jp-controls {
   float: left; }
@@ -239,6 +240,7 @@
   left: 70px; }
 
 .jp-video .jp-volume-controls {
+  margin-left: 132px;
   top: 12px;
   left: 50px; }
 

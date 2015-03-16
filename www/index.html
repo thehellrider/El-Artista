@@ -11,100 +11,23 @@
     <!--player--> 
     <link href="css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />	
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>    
-    <!--audio playlist-->
-    <script type="text/javascript">
-    //<![CDATA[
-    $(document).ready(function(){    
-        new jPlayerPlaylist({
-            jPlayer: "#jquery_jplayer_1",
-            cssSelectorAncestor: "#jp_container_1"
-        }, [
-            {
-                title:"Cro Magnon Man",
-                mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
-            },
-            {
-                title:"Your Face",
-                mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-            },
-            {
-                title:"Cyber Sonnet",
-                mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
-            },
-            {
-                title:"Tempered Song",
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
-            },
-            {
-                title:"Hidden",
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
-            },
-            {
-                title:"Lentement",
-                free:true,
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
-            },
-            {
-                title:"Lismore",
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
-            },
-            {
-                title:"The Separation",
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-05-The-separation.ogg"
-            },
-            {
-                title:"Beside Me",
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-06-Beside-me.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-06-Beside-me.ogg"
-            },
-            {
-                title:"Bubble",
-                free:true,
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-            },
-            {
-                title:"Stirring of a Fool",
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-08-Stirring-of-a-fool.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
-            },
-            {
-                title:"Partir",
-                free: true,
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg"
-            },
-            {
-                title:"Thin Ice",
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
-            }
-        ], {
-            swfPath: "../../dist/jplayer",
-            supplied: "oga, mp3",
-            wmode: "window",
-            useStateClassSkin: true,
-            autoBlur: false,
-            smoothPlayBar: true,
-            keyEnabled: true
-        });
-    });
-    //]]>
+    <script type="text/javascript" src="js/jplayer.playlist.min.js"></script> 
+    <!-- gallery --> 
+    <link rel="stylesheet" type="text/css" href="css/lightcase.css">
+    <link rel="stylesheet" type="text/css" href="css/webplate.css">
+    <link rel="stylesheet" type="text/css" href="css/lightcase.font.css">
+    <link rel="stylesheet" type="text/css" href="css/lightcase.style.css">
+    <script type="text/javascript" src="js/lightcase.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/lightcase-min-641.css">
+   	<script type="text/javascript">
+    	jQuery(document).ready(function($) {
+			$('a[data-rel^=lightcase]').lightcase();
+		});
     </script>
-    <!--video playlist-->
+    <!-- playlist-->
     <script type="text/javascript">
-//<![CDATA[
-$(document).ready(function(){
-
+	//<![CDATA[
+	$(document).ready(function(){
 	new jPlayerPlaylist({
 		jPlayer: "#jquery_jplayer_2",
 		cssSelectorAncestor: "#jp_container_2"
@@ -184,9 +107,9 @@ $(document).ready(function(){
 		keyEnabled: true,
 		audioFullScreen: true
 	});
-});
-//]]>
-</script>
+	});
+	//]]>
+	</script>
     <!--fin player-->    
     <!--xml agenda-->
 	<script type="text/javascript">
@@ -217,6 +140,12 @@ $(document).ready(function(){
     });
     </script>
     <!-------fin xml agenda------>
+<style>
+.galereya-top {
+position: fixed;
+top:40px;
+}
+</style>
 </head>
 <body>
 <div id="container">
@@ -246,16 +175,16 @@ $(document).ready(function(){
             <nav data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Inicio</a></li>
-                    <li><a href="#photos" data-icon="grid">Noticias</a></li>
-                    <li><a href="#playlist" data-icon="grid">Playlist</a></li>
-                    <li><a href="#videos" data-icon="grid">Videos</a></li>
+                    <li><a href="#noticias" data-icon="grid">Noticias</a></li>
+                    <li><a href="#fotos" data-icon="grid">Galeria</a></li>
+                    <li><a href="#videos" data-icon="grid">Musica y Videos</a></li>
                     <li><a href="#info" data-icon="info">Info</a></li>
                 </ul>
             </nav>
         </footer>
     </div>
-<!---------------------------eventos------------------------------------->
-    <div data-role="page" id="photos">
+<!---------------------------noticias------------------------------------->
+    <div data-role="page" id="noticias">
         <header data-role="header">
             <h1>Noticias & Eventos</h1>
         </header>
@@ -268,66 +197,44 @@ $(document).ready(function(){
             <nav data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Inicio</a></li>
-                    <li><a href="#photos" data-icon="grid">Noticias</a></li>
-                    <li><a href="#playlist" data-icon="grid">Playlist</a></li>
-                    <li><a href="#videos" data-icon="grid">Videos</a></li>
+                    <li><a href="#noticias" data-icon="grid">Noticias</a></li>
+                    <li><a href="#fotos" data-icon="grid">Galeria</a></li>
+                    <li><a href="#videos" data-icon="grid">Musica y Videos</a></li>
                     <li><a href="#info" data-icon="info">Info</a></li>
                 </ul>
             </nav>
         </footer>
     </div>
-<!---------------------------playlist------------------------------------->
-	<div data-role="page" id="playlist">
-        <header data-role="header" data-position="fixed">
-            <h1>Playlist</h1>
+<!---------------------------galeria de fotos------------------------------------->
+    <div data-role="page" id="fotos">
+        <header data-role="header">
+            <h1>Galeria</h1>
         </header>
-        <article data-role="content">
-  		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-            <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-                <div class="jp-type-playlist">
-                    <div class="jp-gui jp-interface">
-                        <div class="jp-controls">
-                            <div class="jp-previous" role="button" tabindex="0"></div>
-                            <div class="jp-play" role="button" tabindex="0"></div>
-                            <div class="jp-next" role="button" tabindex="0"></div>
-                            <div class="jp-stop" role="button" tabindex="0"></div>
-                        </div>
-                        <div class="jp-progress">
-                            <div class="jp-seek-bar">
-                                <div class="jp-play-bar"></div>
-                            </div>
-                        </div>
-                        <div class="jp-volume-controls">
-                            <div class="jp-mute" role="button" tabindex="0"></div>
-                            <div class="jp-volume-max" role="button" tabindex="0"></div>
-                            <div class="jp-volume-bar">
-                                <div class="jp-volume-bar-value"></div>
-                            </div>
-                        </div>
-                        <div class="jp-time-holder">
-                            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-                            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
-                        </div>
-                        <div class="jp-toggles">
-                            <div class="jp-repeat" role="button" tabindex="0"></div>
-                            <div class="jp-shuffle" role="button" tabindex="0"></div>
-                        </div>
-                    </div>
-                    <div class="jp-playlist">
-                        <ul>
-                            <li>&nbsp;</li>
-                        </ul>
-                    </div>		
-                </div>
-            </div>
-            </article>
+        <div class="showcase-list">
+       		<a class="showcase" href="img/foto1.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto1.jpg');"></div></a>
+            <a class="showcase" href="img/foto2.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto2.jpg');"></div></a>
+            <a class="showcase" href="img/foto3.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto3.jpg');"></div></a>
+            <a class="showcase" href="img/foto4.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto4.jpg');"></div></a>
+            <a class="showcase" href="img/foto5.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto5.jpg');"></div></a>
+            <a class="showcase" href="img/foto6.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto6.jpg');"></div></a>
+            <a class="showcase" href="img/foto7.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto7.jpg');"></div></a>
+            <a class="showcase" href="img/foto8.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto8.jpg');"></div></a>
+            <a class="showcase" href="img/foto1.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto1.jpg');"></div></a>
+            <a class="showcase" href="img/foto2.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto2.jpg');"></div></a>
+            <a class="showcase" href="img/foto3.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto3.jpg');"></div></a>
+            <a class="showcase" href="img/foto4.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto4.jpg');"></div></a>
+            <a class="showcase" href="img/foto5.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto5.jpg');"></div></a>
+            <a class="showcase" href="img/foto6.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto6.jpg');"></div></a>
+            <a class="showcase" href="img/foto7.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto7.jpg');"></div></a>
+            <a class="showcase" href="img/foto8.jpg" data-rel="lightcase:myCollection:slideshow" title="Your title"><div class="image wallpaper" data-wallpaper="img/foto1t.jpg" style="height: 288px; background-image: url('img/foto8.jpg');"></div></a>
+        </div>
         <footer data-role="footer" data-position="fixed">
             <nav data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Inicio</a></li>
-                    <li><a href="#photos" data-icon="grid">Noticias</a></li>
-                    <li><a href="#playlist" data-icon="grid">Playlist</a></li>
-                    <li><a href="#videos" data-icon="grid">Videos</a></li>
+                    <li><a href="#noticias" data-icon="grid">Noticias</a></li>
+                    <li><a href="#fotos" data-icon="grid">Galeria</a></li>
+                    <li><a href="#videos" data-icon="grid">Musica y Videos</a></li>
                     <li><a href="#info" data-icon="info">Info</a></li>
                 </ul>
             </nav>
@@ -393,9 +300,9 @@ $(document).ready(function(){
             <nav data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Inicio</a></li>
-                    <li><a href="#photos" data-icon="grid">Noticias</a></li>
-                    <li><a href="#playlist" data-icon="grid">Playlist</a></li>
-                    <li><a href="#videos" data-icon="grid">Videos</a></li>
+                    <li><a href="#noticias" data-icon="grid">Noticias</a></li>
+                    <li><a href="#fotos" data-icon="grid">Galeria</a></li>
+                    <li><a href="#videos" data-icon="grid">Musica y Videos</a></li>
                     <li><a href="#info" data-icon="info">Info</a></li>
                 </ul>
             </nav>
@@ -434,9 +341,9 @@ $(document).ready(function(){
             <nav data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Inicio</a></li>
-                    <li><a href="#photos" data-icon="grid">Noticias</a></li>
-                    <li><a href="#playlist" data-icon="grid">Playlist</a></li>
-                    <li><a href="#videos" data-icon="grid">Videos</a></li>
+                    <li><a href="#noticias" data-icon="grid">Noticias</a></li>
+                    <li><a href="#fotos" data-icon="grid">Galeria</a></li>
+                    <li><a href="#videos" data-icon="grid">Musica y Videos</a></li>
                     <li><a href="#info" data-icon="info">Info</a></li>
                 </ul>
             </nav>
